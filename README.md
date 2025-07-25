@@ -150,11 +150,7 @@ Evaluation was done using two main approaches:
 - Human-labeled similarity scores  
 - Evaluated using Pearson and Spearman cosine similarity  
 
-**Results:**  
-```json
-{'pearson_cosine': 0.9224705839869486, 'spearman_cosine': 0.7999999999999999}
+## 3.5 Deployment 
 
-### **Retrieval-Based Evaluation**
-
-
-
+  * Gradio Interface
+  * Streamlit platform
