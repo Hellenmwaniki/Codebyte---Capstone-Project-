@@ -1,4 +1,4 @@
-# Capstone Project Title: Development of a Natural Language Multi-lingual Chatbot for the Kenyan Market
+# Capstone Project Title: Multi-lingual Chatbot for e-commerce start up venturing in the Kenyan Market
 
 ## 1.0 Project Overview
 
@@ -97,6 +97,7 @@ To increase the prevalence of Swahili in the dataset:
 
 
 ## 2.3 Preparing input-reponse pairs from the Cornell dataset.
+
 - Defining file paths
 - Loading  and parsing  movie_lines.txt
 - Loading and parsing movie_conversations.txt
@@ -107,17 +108,22 @@ To increase the prevalence of Swahili in the dataset:
 
 ## 3. Modeling
 
-This involved 
-* Removing all URLs, mentions, hashtags, punctuation, digits and extra whitespace
+This stage involves designing and implementing the core logic that enables the chatbot to understand user queries and generate relevant responses.
+We used the TF-IDF and Cosine Similarity as the baseline model, follwed by a retrieval model and fine-tunned with mT5 for conversational dialogues
 
 ### 3.1 **TF-IDF and Cosine Similarity**
 
+TF-IDF (Term Frequency–Inverse Document Frequency) - a statistical measure that reflects how important a word is to a document in a collection. Cosine Similarity measures how similar two texts (like a user query and a response) are in terms of their word usage.
 
+Cosine Similarity measures how similar two texts (like a user query and a response) are in terms of their word usage. Its computed between the prompts-response and selects the response with the highest similarity score.
 
 
 ## 3.2. Retrieval Model
 
+Selects the most appropriate response from a pre-defined list of responses. Does not  generate new text. When prompted, it retrieves the best-matching response using similarity metrics (like cosine similarity)
 
 
 
 ## 3.3.  Fine-Tuning mT5 for Conversational Generation
+mT5 is a multilingual version of the T5 (Text-To-Text **Transfer Transformer**) model, pre-trained on many languages and can handle many tasks such as text generation, translation, and question answering.
+Fine-tuning mT5 on a conversational dataset enables the model to learn how to generate responses that are: contextually appropriate, grammatically fluent, and aligned with the chatbot’s domain. 
