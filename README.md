@@ -149,3 +149,8 @@ Evaluation was done using two main approaches:
 - Sample sentence pairs and scores  
 - Human-labeled similarity scores  
 - Evaluated using Pearson and Spearman cosine similarity  
+
+## 3.5 Deployment 
+
+  * Gradio Interface
+  * Streamlit platform
