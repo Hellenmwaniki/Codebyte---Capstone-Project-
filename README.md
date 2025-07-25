@@ -122,8 +122,35 @@ Cosine Similarity measures how similar two texts (like a user query and a respon
 
 Selects the most appropriate response from a pre-defined list of responses. Does not  generate new text. When prompted, it retrieves the best-matching response using similarity metrics (like cosine similarity)
 
+## 3.3 Fine-Tuning mT5 for Conversational Generation
 
+**mT5** is a multilingual version of the T5 (Text-To-Text **Transfer Transformer**) model. It is pre-trained on many languages and can handle a variety of tasks such as text generation, translation, and question answering.
 
-## 3.3.  Fine-Tuning mT5 for Conversational Generation
-mT5 is a multilingual version of the T5 (Text-To-Text **Transfer Transformer**) model, pre-trained on many languages and can handle many tasks such as text generation, translation, and question answering.
-Fine-tuning mT5 on a conversational dataset enables the model to learn how to generate responses that are: contextually appropriate, grammatically fluent, and aligned with the chatbot’s domain. 
+Fine-tuning mT5 on a conversational dataset enables the model to learn how to generate responses that are:
+
+- Contextually appropriate  
+- Grammatically fluent  
+- Aligned with the chatbot’s domain  
+
+**Fine-tuning was done using** `accelerate>=0.26.0`, a Hugging Face library for training transformer models.  
+The fine-tuning process included:
+
+- Encoding the input and candidate responses  
+- Computing cosine similarities  
+
+---
+
+## 3.4 Evaluation
+
+Evaluation was done using two main approaches:
+
+### **Semantic Similarity Evaluation**
+
+- Sample sentence pairs and scores  
+- Human-labeled similarity scores  
+- Evaluated using Pearson and Spearman cosine similarity  
+
+## 3.5 Deployment 
+
+  * Gradio Interface
+  * Streamlit platform
