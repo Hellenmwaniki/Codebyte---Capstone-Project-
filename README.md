@@ -144,13 +144,13 @@ The fine-tuning process included:
 
 Evaluation was done using two main approaches:
 
-### **Semantic Similarity Evaluation**
+### 3.4.1 **Semantic Similarity Evaluation**
 
 - Sample sentence pairs and scores  
 - Human-labeled similarity scores  
 - Evaluated using Pearson and Spearman cosine similarity  
 
-## 3.5 Deployment 
+## 3.5 Deployment
 
-  * Gradio Interface
-  * Streamlit platform
+  * Gradio Interface - for internal deployment
+  * Streamlit platform- open access
