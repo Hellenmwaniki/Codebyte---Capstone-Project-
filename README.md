@@ -144,7 +144,7 @@ The fine-tuning process included:
 
 Evaluation was done using two main approaches:
 
-### **Semantic Similarity Evaluation**
+### 3.4.1 **Semantic Similarity Evaluation**
 
 - Sample sentence pairs and scores  
 - Human-labeled similarity scores  
