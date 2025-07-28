@@ -150,7 +150,7 @@ Evaluation was done using two main approaches:
 - Human-labeled similarity scores  
 - Evaluated using Pearson and Spearman cosine similarity  
 
-## 3.5 Deployment 
+## 3.5 Deployment
 
-  * Gradio Interface
-  * Streamlit platform
+  * Gradio Interface - for internal deployment
+  * Streamlit platform- open access
